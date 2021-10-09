@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="login/signup.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký</title>
+  </head>  
+  <body>
+    <div id="sidenav" class="sidenav">
+      <div>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="about.html">About</a>
+          <a href="index.html">Games</a>
+          <a href="contact.html">Contact</a>
+      </div>
+  
+      <div class="logindiv" id="logindiv">   
+          <a href="signin.html">Sign In</a>
+          <a href="signup.html">Sign Up</a>    
+      </div>
+    </div>
+    
+    <div id="openSidenav">
+      <span style="font-size:6vh; cursor:pointer; " onclick="openNav()">&#9776;</span>
+    </div>
+  
+    <a id="logo-container" class="logo-container" href="index.html">
+      <img id='logo' class='logo' src="tainguyen/logo.png">
+    </a>
+  
+    <hr>
+
+    <form role="form" autocomplete="off" onsubmit="signUp(event);">
+      <div class="register">
+        <h1>Đăng ký</h1>
+        <hr/>
+        <div class="form-group">
+          <label for="fname"><b>Họ:</b></label>
+          <input type="text" name="fname" id="fname" placeholder="First Name" required/>
+        </div>
+
+        <div class="form-group">
+          <label for="lname"><b>Tên:</b></label>
+          <input type="text" name="lname" id="lname" placeholder="Last Name" required/>
+        </div>
+
+        <div>
+          <label for="username"><b>Tên đăng nhập:</b></label>
+          <input type="text" placeholder="Username" name="username" id="un" required/>  
+        </div>
+        <div>
+          <label for="password"><b>Mật khẩu:</b></label>
+          <input type="password" placeholder="Password" name="pwd" id="pwd" required/>  
+        </div>
+        <hr/>
+
+        <div class="submit-container">
+          <input type="submit" class="submit" onclick="signUp(event)" value="Đăng ký"/>
+        </div>
+      </div>
+      <p class="register login">Bạn đã có tài khoản rồi?<a href="./signin.html">Đăng nhập</a></p>
+    </form>
+    <script src="login/signin.js"></script>
+  </body>
+</html>
